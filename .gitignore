@@ -31,3 +31,22 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+# Maven
+target/
+
+# Mac OS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Temporary files
+*.tmp
+*.swp
