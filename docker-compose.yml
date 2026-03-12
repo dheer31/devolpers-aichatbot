@@ -8,17 +8,4 @@ services:
     ports:
       - "8085:8085"
     environment:
-      - SPRING_AI_OLLAMA_BASE_URL=http://ollama:11434
-    depends_on:
-      - ollama
-
-  ollama:
-    image: ollama/ollama
-    container_name: ollama-server
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama:/root/.ollama
-
-volumes:
-  ollama:
+      - SPRING_AI_OLLAMA_BASE_URL=http://172.31.18.86:11434
