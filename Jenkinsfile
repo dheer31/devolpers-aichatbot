@@ -31,7 +31,9 @@ pipeline {
                 expression { params.ACTION == 'Deploy' }
             }
             steps {
-                sh 'docker compose up -d --build'
+                sh '''
+                docker-compose up -d --build
+                '''
             }
         }
 
@@ -40,7 +42,9 @@ pipeline {
                 expression { params.ACTION == 'Remove' }
             }
             steps {
-                sh 'docker compose down'
+                sh '''
+                docker-compose down
+                '''
             }
         }
     }
