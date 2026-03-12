@@ -12,7 +12,7 @@ public class OllamaService {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public OllamaService() {
-        this.webClient = WebClient.create("http://localhost:11434");
+        this.webClient = WebClient.create("http://172.31.18.86:11434");
     }
 
     public String generateResponse(String prompt){
